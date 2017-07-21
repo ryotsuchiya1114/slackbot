@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+### importする ###
 from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 from slacker import Slacker
@@ -27,7 +28,7 @@ def getkabuka(code):
 def kabuka(message):
     meigara = message.body['text']
     html = getkabuka(meigara)
-    f = open("/home/beck/stocklist.csv")
+    f = open("/home/beck/slackbot/stocklist.csv")
     companyList = f.readlines()
     f.close()
     for line in companyList:

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+## importする ##
 from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 from slacker import Slacker
