@@ -32,7 +32,8 @@ def kabuka(message):
     companyList = f.readlines()
     f.close()
     for line in companyList:
-        if line.find(meigara) >= 0:
+#        if line.find(meigara) >= 0:
+        if meigara in line:
             company = line.split(",")[1]
             break
         else:

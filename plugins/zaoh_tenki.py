@@ -25,6 +25,7 @@ def tenki(message):
     jsonfile = getjson(gethtml(uri))
     kekka = "----蔵王近辺の天気情報----\n"
     today = jsonfile['forecasts'][0]['telop']
+    todayText = jsonfile['description']['text']
     tomorrow = jsonfile['forecasts'][1]['image']['title']
     if '雨' in today or '雨' in tomorrow :
         iro = 'danger'
@@ -33,6 +34,7 @@ def tenki(message):
     else :
         iro = 'good'
     kekka += '今日の天気は %s \n' % (today)
+    kekka += '%s \n' % (todayText)
     kekka += '明日の天気は %s \n' % (tomorrow)
     kekka += '----蔵王天気情報ここまで----'
 
