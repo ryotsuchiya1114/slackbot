@@ -27,6 +27,10 @@ def reaction(message):
 ### 入力したメッセージを受け取って表示する ###
 @listen_to('バカ')
 def baka(message):
+    f = open("/home/beck/test.text", "w")
+    f.write(message.body['user'])
+    f.write(message.body['text'])
+    f.close()
     text = message.body['text']
     message.reply(text)
 

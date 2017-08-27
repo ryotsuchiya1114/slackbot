@@ -35,6 +35,8 @@ def kabuka(message):
 #        if line.find(meigara) >= 0:
         if meigara in line:
             company = line.split(",")[1]
+            # ここでbreakしないと、for文が最後まで走り続けて、結果
+            # elseの不明な企業が表示される
             break
         else:
             company = '不明な企業'
