@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-API_TOKEN = "xoxb-211379696883-yJd9XBdyEO8VIAsXTuDOeWFD"
+API_TOKEN = "VIAsXTuDOeWFD"
 
 default_reply = "意味不明"
 
